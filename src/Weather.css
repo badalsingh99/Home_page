@@ -1,0 +1,265 @@
+.card {
+    padding: 20px;
+    background-color: #99d193;
+    border-radius: 8px; 
+    width: 330px;
+    height: 350px;
+    font-family: "JetBrains Mono",monospace;
+    overflow: hidden;
+    margin:25px;
+    text-align: center;
+    font-size: 13px;
+    box-shadow: 1px 2px 4px 2px lightblue;
+    display: inline-block;
+  }
+  
+  .search {
+    margin: 20px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 300px;
+    width: 400px;
+    padding: 18px;
+    border: none;
+    box-shadow: 2px 1px 3px 2px lightblue;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+
+  .search button img{
+    width: 20px;
+  }
+
+  .search button {
+    height: 60px;
+    width: 60px;
+    margin-top: 7px;
+    outline: none;
+    border-radius: 10px;
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    box-shadow: 2px 1px 2px 2px lightblue;
+  }
+  
+  .error {
+    display: flex;
+    margin-left: 450px;
+    font-size: 16px;
+    color: rgb(249, 50, 50);
+  }
+  
+  .weather {
+    margin-bottom: 20px;
+  }
+  
+  .weather-icon {
+    width: 90px;
+    height: 80px;
+  }
+  
+  .temp {
+    font-size: 38px;
+    margin-top: 10px;
+  }
+  
+  .city {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .col {
+    display: flex;
+    align-items: center;
+  }
+  
+  .col img {
+    width: 29px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+   
+/* CSS button close */
+
+  .button-30 {
+    width: 100px;
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0,#cc3f3f, rgb(212, 16, 16) 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(193, 110, 42, 0.5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-30:focus {
+    box-shadow: rgb(60, 224, 76) 0 0 0 1.5px inset, rgba(157, 144, 185, 0.4) 0 2px 4px, rgba(76, 9, 220, 0.3) 0 7px 13px -3px, #f0f0ec 0 -3px 0 inset;
+  }
+  
+  .button-30:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #cc3f3f 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-30:active {
+    box-shadow: #e03c83 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+  
+  
+  
+  
+  /* CSS */
+  .button-30 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-30:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #e82727,
+      #ff7300,
+      #e1de54,
+      #76d251,
+      #00ffd5,
+      #ee7163,
+      #f51800,
+      #ff1414
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+
+  /* card *
+  
+  /* CSS */
+  .card{
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .card:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #e8e8e8,
+      #ff7300,
+      #f9f9f0,
+      #c6dcbd,
+      #00ffd5,
+      #99bee2,
+      #ee7163,
+      #cbbab8,
+      #cff4c3,
+      #ff1414
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 4000%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-card {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  
+}
+  
