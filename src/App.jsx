@@ -1,4 +1,3 @@
-// import React from "react";
 import Home from "./Home";
 import Save from "./Save";
 import Show from "./Show";
@@ -32,18 +31,15 @@ const App = () => {
             </Link>
             &nbsp;&nbsp;
             <Link className="link" to="/save">
-              <i class="bi bi-download"></i> Login
+              <i className="bi bi-download"></i> Login
             </Link>
             &nbsp;&nbsp;
             <Link className="link" to="/show">
-              <i class="bi bi-people"></i> Login Details
+              <i className="bi bi-people"></i> Login Details
             </Link>
             <Link className="link" to="/weather">
-              <i class="bi bi-sun"></i> Weather
-            </Link>
-
-            
-     
+              <i className="bi bi-sun"></i> Weather
+            </Link>  
           </nav>
         </div>
       </div>
